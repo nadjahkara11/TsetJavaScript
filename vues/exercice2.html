@@ -1,0 +1,116 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Solutions des exercices JS</title>
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/starter-template/">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <!-- Custom styles for this template -->
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <link href="starter-template.css" rel="stylesheet">
+    <!-- fonction javascript -->
+    <script language="javascript">
+        function fozz_bezz(exo2) {
+            let nb=document.exo2.nb.value;
+            if ((nb % 5 === 0) && (nb % 3 === 0)) {
+                document.solution.sol.value="FozzBezz";
+                console.log("FozzBezz");
+            } else if (nb % 5 === 0) {
+                document.solution.sol.value="Bezz";
+                console.log("Bezz");
+            } else if (nb % 3 === 0) {
+                document.solution.sol.value="Fozz";
+                console.log("Fozz");
+            } else  document.solution.sol.value=nb;
+        }
+    </script>
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
+            <a class="navbar-brand" class="ml-3">
+                <img src="../data/javascript-icon.png" width="40" height="40" alt="" >
+            </a>
+            <a class="navbar-brand" >Solutions des exercices JavaScript </a>
+            <div class="collapse navbar-collapse" >
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item ">
+                        <a class="nav-link " href="exercice1.html">Exercie 01 </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="exercice2.html">Exercie 02 </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="exercice3.html">Exercie 03 </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="exercice4.html">Exercie 04 </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="exercice5.html">Exercie 05 </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="exercice6.html">Exercie 06 </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="exercice7.html">Exercie 07 </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+
+
+
+
+    <div class="row">
+        <div class="col-md-4 mx-2">
+            <div class="card text-white bg-dark mb-3" style="max-width: 40rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Enoncé de l'exercice 02</h5>
+                    <p class="card-text">
+                        Écrir une fonction appelée fozz_bezz qui prend un nombre<br>
+                        ○ Si le nombre est divisible par 3, il doit renvoyer «Fozz».<br>
+                        ○ S'il est divisible par 5, il doit renvoyer «Bezz».<br>
+                        ○ S'il est divisible par 3 et 5, il doit renvoyer «FozzBezz».<br>
+                        ○ Sinon, il doit renvoyer le meme numéro .</p>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card text-white bg-dark mb-3" style="max-width: 40rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Solution</h5>
+                    <form class="form-group" name="exo2">
+                        <input type="number" class="form-control my-2" Id="nb" name="nb" placeholder="Veuillez saisir un nombre">
+                        <button type="button" class="btn btn-primary my-4" onClick="fozz_bezz(exo2)">Soumettre </button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card text-white bg-dark mb-3" style="max-width: 40rem;">
+                <div class="card-body">
+                    <h3 class="card-title">Le résultat est:</h3>
+                    <form class="form-group" name="solution">
+                        <input type="text" class="justify-content-center"  Id="sol" value="">
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
+
